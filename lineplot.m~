@@ -1,0 +1,17 @@
+function lineplot(h,par,clr, )
+
+m = par(1);
+c = par(2);
+% th = 0.1; 
+
+figure(h);
+x = linspace(0,1,100);
+y = m*x + repmat(c,1,100);
+plot(x,y,'-','color',clr);
+
+% y = m*x + repmat(c-th,1,100);
+% plot(x,y,'--','color',clr);
+% 
+% y = m*x + repmat(c+th,1,100);
+% plot(x,y,'--','color',clr);
+end
